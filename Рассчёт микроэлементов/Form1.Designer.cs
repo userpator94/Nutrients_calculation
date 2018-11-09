@@ -49,12 +49,24 @@
             this.button_delete = new System.Windows.Forms.Button();
             this.button_AddProduct = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button_FH = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(9, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 0;
@@ -63,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 63);
+            this.label2.Location = new System.Drawing.Point(9, 129);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 1;
@@ -72,7 +84,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 114);
+            this.label3.Location = new System.Drawing.Point(9, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 13);
             this.label3.TabIndex = 2;
@@ -122,7 +134,7 @@
             "1:00",
             "1:30",
             "2:00"});
-            this.time_comboBox.Location = new System.Drawing.Point(15, 79);
+            this.time_comboBox.Location = new System.Drawing.Point(12, 145);
             this.time_comboBox.Name = "time_comboBox";
             this.time_comboBox.Size = new System.Drawing.Size(112, 21);
             this.time_comboBox.TabIndex = 5;
@@ -130,7 +142,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(15, 28);
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 94);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(112, 20);
             this.dateTimePicker1.TabIndex = 6;
@@ -147,7 +159,7 @@
             "Полдник 2",
             "Ужин",
             "Ужин 2"});
-            this.mealName_listBox.Location = new System.Drawing.Point(15, 130);
+            this.mealName_listBox.Location = new System.Drawing.Point(12, 196);
             this.mealName_listBox.Name = "mealName_listBox";
             this.mealName_listBox.Size = new System.Drawing.Size(112, 95);
             this.mealName_listBox.TabIndex = 7;
@@ -155,7 +167,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 241);
+            this.label4.Location = new System.Drawing.Point(9, 307);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 13);
             this.label4.TabIndex = 8;
@@ -164,7 +176,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(160, 12);
+            this.label5.Location = new System.Drawing.Point(157, 78);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 13);
             this.label5.TabIndex = 9;
@@ -172,7 +184,7 @@
             // 
             // productVol_textBox
             // 
-            this.productVol_textBox.Location = new System.Drawing.Point(15, 257);
+            this.productVol_textBox.Location = new System.Drawing.Point(12, 323);
             this.productVol_textBox.Name = "productVol_textBox";
             this.productVol_textBox.Size = new System.Drawing.Size(112, 20);
             this.productVol_textBox.TabIndex = 10;
@@ -202,7 +214,7 @@
             "Смесь с крупами",
             "Иное",
             "Приправы, соусы"});
-            this.listBox2.Location = new System.Drawing.Point(163, 79);
+            this.listBox2.Location = new System.Drawing.Point(160, 145);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(278, 264);
             this.listBox2.TabIndex = 11;
@@ -210,7 +222,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(163, 28);
+            this.textBox2.Location = new System.Drawing.Point(160, 94);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(120, 20);
             this.textBox2.TabIndex = 12;
@@ -219,7 +231,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(160, 63);
+            this.label6.Location = new System.Drawing.Point(157, 129);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 13);
             this.label6.TabIndex = 13;
@@ -227,7 +239,7 @@
             // 
             // add_button
             // 
-            this.add_button.Location = new System.Drawing.Point(15, 295);
+            this.add_button.Location = new System.Drawing.Point(12, 361);
             this.add_button.Name = "add_button";
             this.add_button.Size = new System.Drawing.Size(112, 36);
             this.add_button.TabIndex = 14;
@@ -237,7 +249,7 @@
             // 
             // preshow
             // 
-            this.preshow.Location = new System.Drawing.Point(727, 349);
+            this.preshow.Location = new System.Drawing.Point(724, 415);
             this.preshow.Name = "preshow";
             this.preshow.Size = new System.Drawing.Size(105, 32);
             this.preshow.TabIndex = 16;
@@ -248,7 +260,7 @@
             // listBox_products
             // 
             this.listBox_products.FormattingEnabled = true;
-            this.listBox_products.Location = new System.Drawing.Point(457, 27);
+            this.listBox_products.Location = new System.Drawing.Point(454, 93);
             this.listBox_products.Name = "listBox_products";
             this.listBox_products.Size = new System.Drawing.Size(375, 316);
             this.listBox_products.TabIndex = 19;
@@ -256,7 +268,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(454, 12);
+            this.label7.Location = new System.Drawing.Point(451, 78);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 13);
             this.label7.TabIndex = 20;
@@ -264,7 +276,7 @@
             // 
             // button_Size
             // 
-            this.button_Size.Location = new System.Drawing.Point(838, 130);
+            this.button_Size.Location = new System.Drawing.Point(835, 196);
             this.button_Size.Name = "button_Size";
             this.button_Size.Size = new System.Drawing.Size(15, 112);
             this.button_Size.TabIndex = 21;
@@ -276,7 +288,7 @@
             // 
             this.preview_listBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.preview_listBox.FormattingEnabled = true;
-            this.preview_listBox.Location = new System.Drawing.Point(877, 27);
+            this.preview_listBox.Location = new System.Drawing.Point(874, 93);
             this.preview_listBox.Name = "preview_listBox";
             this.preview_listBox.Size = new System.Drawing.Size(160, 290);
             this.preview_listBox.TabIndex = 22;
@@ -285,7 +297,7 @@
             // 
             // button_delete
             // 
-            this.button_delete.Location = new System.Drawing.Point(877, 320);
+            this.button_delete.Location = new System.Drawing.Point(874, 386);
             this.button_delete.Name = "button_delete";
             this.button_delete.Size = new System.Drawing.Size(160, 23);
             this.button_delete.TabIndex = 23;
@@ -295,7 +307,7 @@
             // 
             // button_AddProduct
             // 
-            this.button_AddProduct.Location = new System.Drawing.Point(457, 349);
+            this.button_AddProduct.Location = new System.Drawing.Point(454, 415);
             this.button_AddProduct.Name = "button_AddProduct";
             this.button_AddProduct.Size = new System.Drawing.Size(119, 32);
             this.button_AddProduct.TabIndex = 24;
@@ -306,17 +318,222 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(874, 12);
+            this.label8.Location = new System.Drawing.Point(871, 78);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 13);
             this.label8.TabIndex = 25;
             this.label8.Text = "Выбранные позиции";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(9, 11);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Возраст";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(157, 11);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(27, 13);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Пол";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(240, 11);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 13);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Вариант рациона";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70"});
+            this.comboBox1.Location = new System.Drawing.Point(12, 27);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 29;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "муж",
+            "жен"});
+            this.comboBox2.Location = new System.Drawing.Point(161, 27);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(54, 21);
+            this.comboBox2.TabIndex = 30;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "суточный",
+            "ЛПП"});
+            this.comboBox3.Location = new System.Drawing.Point(243, 27);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(91, 21);
+            this.comboBox3.TabIndex = 31;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.rationVariant_Changed);
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.Enabled = false;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.comboBox4.Location = new System.Drawing.Point(365, 27);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(143, 21);
+            this.comboBox4.TabIndex = 32;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(362, 11);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(143, 13);
+            this.label12.TabIndex = 33;
+            this.label12.Text = "Количество приёмов пищи";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(653, 11);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(44, 13);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "Рацион";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.Enabled = false;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "2а",
+            "3",
+            "4",
+            "4а",
+            "4б",
+            "5",
+            "Витамины"});
+            this.comboBox5.Location = new System.Drawing.Point(656, 27);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(91, 21);
+            this.comboBox5.TabIndex = 35;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(532, 11);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(100, 13);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "Вредные факторы";
+            // 
+            // button_FH
+            // 
+            this.button_FH.Enabled = false;
+            this.button_FH.Location = new System.Drawing.Point(535, 27);
+            this.button_FH.Name = "button_FH";
+            this.button_FH.Size = new System.Drawing.Size(97, 23);
+            this.button_FH.TabIndex = 37;
+            this.button_FH.Text = "Выбрать";
+            this.button_FH.UseVisualStyleBackColor = true;
+            this.button_FH.Click += new System.EventHandler(this.button_FH_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 391);
+            this.ClientSize = new System.Drawing.Size(859, 461);
+            this.Controls.Add(this.button_FH);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button_AddProduct);
             this.Controls.Add(this.button_delete);
@@ -369,6 +586,18 @@
         private System.Windows.Forms.Button button_delete;
         private System.Windows.Forms.Button button_AddProduct;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button_FH;
     }
 }
 

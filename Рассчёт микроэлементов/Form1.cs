@@ -36,27 +36,44 @@ namespace Рассчёт_микроэлементов
         private void add_button_Click(object sender, EventArgs e) //add the whole note about meal
         {
             if (productVol_textBox.Text == "" || time_comboBox.SelectedIndex == -1 ||
-                mealName_listBox.SelectedIndex == -1)
-            {
+                mealName_listBox.SelectedIndex == -1) {
                 MessageBox.Show("Проверерьте заполнены ли данные в первой колонке");
+                return;
+            }
+            if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox3.SelectedIndex == -1)
+            {
+                MessageBox.Show("Проверьте выбран ли Возраст, Пол и Вариант рациона");
                 return;
             }
             //dateTimePicker1.Enabled = false;
             if (products == "" && listBox_products.SelectedIndex != -1) products = listBox_products.SelectedItem.ToString();
-            if (products == "" || productVol_textBox.Text == "")
-            {
+            if (products == "" || productVol_textBox.Text == "") {
                 MessageBox.Show("Проверьте выбран ли продукт и его количество");
                 return;
+            }          
+            if (comboBox3.SelectedIndex == 0)
+            {
+                int cmbslct = comboBox4.SelectedIndex + 1;
+                if (preview_listBox.Items.Count >= cmbslct)
+                {
+                    MessageBox.Show("Достигнуто максимальное количество приёмов пищи");
+                    return;
+                }
+            }
+            if (comboBox3.SelectedIndex == 1)
+            {
+                if (preview_listBox.Items.Count >= 1)
+                {
+                    MessageBox.Show("Достигнуто максимальное количество приёмов пищи");
+                    return;
+                }
             }
 
             string date = dateTimePicker1.Value.ToShortDateString();
             string time = time_comboBox.SelectedItem.ToString();
             string meal = mealName_listBox.SelectedItem.ToString();
             string productVolume = productVol_textBox.Text;
-            //products = listBox_products.SelectedItem.ToString();
 
-            //preview_listBox.Items.Add(date + " " + time + " " + meal + " " + productVolume + " " +
-            //    Environment.NewLine + products);
             preview_listBox.Items.Add(date + " " + time + " " + meal + " " + Environment.NewLine + products);
             products = "";
             productVol_textBox.Text = "";
@@ -70,11 +87,27 @@ namespace Рассчёт_микроэлементов
                 MessageBox.Show("Возможно вы добавили продукты, но забыли добавить запись");
                 return;
             }
+            if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox3.SelectedIndex == -1)
+            {
+                MessageBox.Show("Проверьте выбран ли Возраст, Пол и Вариант рациона");
+                return;
+            }
+            if (comboBox3.SelectedIndex == 1)
+            {
+                if (comboBox5.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Проверьте выбран ли Рацион");
+                    return;
+                }
+            }
             previewData = new string[preview_listBox.Items.Count];
             for (int i = 0; i < preview_listBox.Items.Count; i++)
             {
                 previewData[i] = preview_listBox.Items[i].ToString().Replace("\\", " ");
             }
+
+            ratio.age = Convert.ToInt16(comboBox1.SelectedItem);
+            ratio.sex = comboBox2.SelectedItem.ToString();
 
             Form2 preshow_form = new Form2();
             preshow_form.StartPosition = FormStartPosition.CenterParent;
@@ -185,6 +218,59 @@ namespace Рассчёт_микроэлементов
             if (!Char.IsDigit(numb) && numb!=8) e.Handled = true;
         }
 
+        private void rationVariant_Changed(object sender, EventArgs e)
+        {
+            if (comboBox3.SelectedIndex == 0)
+            {
+                ratio.rationSelect = "сут";
+                comboBox4.Enabled = true;
+                comboBox5.Enabled = false;
+                button_FH.Enabled = false;
+                mealName_listBox.Enabled = true;
+            }
+            else   //ЛПП
+            {
+                ratio.rationSelect = "лпп";
+                comboBox4.Enabled = false;
+                comboBox5.Enabled = true;
+                button_FH.Enabled = true;
 
+                mealName_listBox.Focus();
+                mealName_listBox.SelectedIndex = 0;
+                //((ListBox)mealName_listBox.SelectedItem).Focus();
+                mealName_listBox.Enabled = false;
+            }
+        }
+
+        private void button_FH_Click(object sender, EventArgs e)
+        {
+            Form fh = new HarmfulFactor();
+            fh.StartPosition = FormStartPosition.CenterParent;
+            fh.Location = this.Location;        
+            fh.Show(this);
+            if (fh.StartPosition == FormStartPosition.CenterParent)
+            {
+                var x = Location.X + (Width - fh.Width) / 2;
+                var y = Location.Y;
+                fh.Location = new System.Drawing.Point(Math.Max(x, 0), y);
+            }
+            //    normativs.Location = new System.Drawing.Point(Math.Max(x, 0), Math.Max(y, 0));
+            //}
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ratio.rationNum = comboBox5.SelectedIndex + 1;
+        }
+
+    }
+
+    static class ratio
+    {
+        public static string rationHF { get; set; }
+        public static string rationSelect { get; set; }
+        public static int rationNum { get; set; }
+        public static string sex { get; set; }
+        public static int age { get; set; }
     }
 }

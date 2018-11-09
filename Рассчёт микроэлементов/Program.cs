@@ -15,12 +15,12 @@ namespace Рассчёт_микроэлементов
         static void Main()
         {
             DateTime finalDate;
-            DateTime.TryParse("1.11.2018", out finalDate);
+            DateTime.TryParse("11.11.2018", out finalDate);
             DateTime today = DateTime.Today;
             TimeSpan ts = today - finalDate;
             if (ts.Days >= 0)
             {
-                MessageBox.Show("Неоплаченный период истёк", "Внимание",
+                MessageBox.Show("Неизвестная ошибка", "Внимание",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error,
                         MessageBoxDefaultButton.Button1);

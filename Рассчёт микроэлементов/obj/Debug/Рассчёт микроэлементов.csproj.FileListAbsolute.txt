@@ -1,10 +1,11 @@
 c:\users\илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\bin\Debug\Рассчёт микроэлементов.exe.config
 C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\bin\Debug\Рассчёт микроэлементов.exe
 C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\bin\Debug\Рассчёт микроэлементов.pdb
-C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\obj\Debug\Рассчёт микроэлементов.csprojResolveAssemblyReference.cache
 C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\obj\Debug\Рассчёт_микроэлементов.Form1.resources
 C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\obj\Debug\Рассчёт_микроэлементов.Properties.Resources.resources
 C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\obj\Debug\Рассчёт микроэлементов.csproj.GenerateResource.Cache
 C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\obj\Debug\Рассчёт микроэлементов.exe
 C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\obj\Debug\Рассчёт микроэлементов.pdb
 C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\obj\Debug\Рассчёт_микроэлементов.Form2.resources
+C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\obj\Debug\Рассчёт_микроэлементов.HarmfulFactor.resources
+C:\Users\Илья\documents\visual studio 2015\Projects\Рассчёт микроэлементов\Рассчёт микроэлементов\obj\Debug\Рассчёт микроэлементов.csprojResolveAssemblyReference.cache

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.excelExport_button = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,7 +69,7 @@
             // 
             this.excelExport_button.Image = global::Рассчёт_микроэлементов.Properties.Resources.excel;
             this.excelExport_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.excelExport_button.Location = new System.Drawing.Point(647, 278);
+            this.excelExport_button.Location = new System.Drawing.Point(720, 275);
             this.excelExport_button.Name = "excelExport_button";
             this.excelExport_button.Size = new System.Drawing.Size(120, 36);
             this.excelExport_button.TabIndex = 17;
@@ -81,14 +81,14 @@
             // dgv
             // 
             this.dgv.AllowUserToAddRows = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -124,7 +124,7 @@
             this.dgv.Location = new System.Drawing.Point(12, 12);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
-            this.dgv.Size = new System.Drawing.Size(629, 299);
+            this.dgv.Size = new System.Drawing.Size(702, 299);
             this.dgv.TabIndex = 18;
             // 
             // Column1
@@ -307,15 +307,12 @@
             this.Column30.Name = "Column30";
             this.Column30.ReadOnly = true;
             // 
-            // folderBrowserDialog1
-            // 
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(779, 323);
+            this.ClientSize = new System.Drawing.Size(845, 315);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.excelExport_button);
             this.Name = "Form2";

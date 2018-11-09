@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="listBox_factors.Items" xml:space="preserve">
+    <value>Подземные горнопроходческие, подготовительные и очистные работы на рудниках и шахтах оловодобывающей, свинцовоцинковой и медной промышленности, где руды или породы содержат 10% и более свободной двуокиси кремния</value>
+  </data>
+  <data name="listBox_factors.Items1" xml:space="preserve">
+    <value>Производство аминопродуктов - реактивов (п-аминоацетофенон, аминоазобензол-пара, амидол, аминофенол-пара основание, аминофенол-мета и орто, анизидин-пара, анилин солянокислый, антразо, анилид тиоглеколевой кислоты, ацетилдифениламин, бензиламин,  бутиламин, диазоаминобензол-пара, орто-дианизидин, диметиламиноазобензол-пара, диметил-аминобензальдегид-пара, диметилпарафенилендиамин солянокислый, диметиланилин солянокислый, дипикриламин, диэтиланилин, 2,6-дихлорфенолиндофенолин, диэтиламин и его соли, нитродифениламин, пропиламин, сульфаниловая кислота, стильбазо, толуидин, тионалид, триптофан, фенилгидраЗин основание, фенилгидраЗин солянокислый, фенилендиамин-пара и его соли, этиламин солянокислый, дитиоанилин, азобензол, анилин, анилин сернокислый, анилин уксуснокислый, аминофенол-пара сернокислый, диметиланилин, дифенилмочевина, диметиламин солянокислый, метиламин солянокислый, альфанафтиламин, бетанафтохинон, альфанафтохинон, толидинорто, толуидин -орто, -мета, -пара, толуилендиамид-мета, фенилгидраЗин сернокислый, толуидин, хлоргидрат, стильбен, ацетнафталид-альфа, ацетофенон, бенЗо-хлор-2,4-дихлоранилид, диметилпарафенилендиамин сульфат, дифениламиносульфонат бария и натрия, дифенилкарбазид, диэтилпарафенилендиамин сульфат, 2,6-дибромфенолиндофенол, дибромфенилгидраЗин, дибутиламин, диметглиоксим, фенилгидроксиламин, купферон)</value>
+  </data>
+  <data name="listBox_factors.Items2" xml:space="preserve">
+    <value>Производство галогенопроизводных углеводородов - реактивов (бензальхлорид, бензотрихлорид, дихлорбензол-мета, бромтолуол-пара, метил йодистый, бромистый, метилен хлористый, тетраметиламмоний хлористый, бромистый, йодистый, броморганические соединения)</value>
+  </data>
+  <data name="listBox_factors.Items3" xml:space="preserve">
+    <value>производство компонентов для цветной кинопленки (компонента 521 (желтая 1) на стадиях получения параметоксибензойной кислоты, параметоксибензоилхлорида, параметоксибензоилуксусного эфира, парахлортолуола парахлорбензойной кислоты, хлорнитробензойной кислоты, метилстеариламина, промпродуктов 650 и самого компонента; компонента 535 (желтая 2) на стадиях получения нитроизофталевой кислоты, аминоизофталевой кислоты, диметилового эфира, паранитробензойной кислоты, паранитробензоилхлорида, паранитробензоилуксусного эфира, промпродукта I-535, II-535 и самого компонента; компонента 302 (пурпурная 2) на стадиях получения октодецилянтарного ангидрида, паранитробензоилцианаксусного эфира, парааминобензоилцианацетоуксусного эфира, парааминоомегацианацетофенола и самого компонента; компонента 654 (голубая 2) на стадиях получения октодецилхлорида, метилстеариламина, промпродукта I-654, II-654 и самого компонента; компонента 546 на стадиях получения трифенилфосфата, нафтосалола, стеаронитрила, октодециламина, промпродукта I-546, II-546 и самого компонента; проявителя цветного (ОANN); компонента пурпурного 6 на стадиях получения этилового эфира имино(4-фенокси-3-сульфофенил) гидразинкриноновой кислоты, аминопрозолона, гидразина пурпурной I, хлоргидрата для этилового эфира иминомалоновой кислоты и самого компонента; компонента голубого 6 на стадиях получения промТ-продуктов (от I-Г-6 до 8-Г-6), хлорангидрида оксинафтойной кислоты, стеароилхлорида; проявителя цветного 2 (4-аминооксиэтилэтиланилсульфат)</value>
+  </data>
+  <data name="listBox_factors.Items4" xml:space="preserve">
+    <value>производство кубовых красителей на стадиях, проводимых при высоких температурах в среде органических растворителей и хлористого алюминия, а также на стадиях применения бромбензантрона, хлора, тионилхлорида, гидразина и сульфурилхлорида</value>
+  </data>
+  <data name="listBox_factors.Items5" xml:space="preserve">
+    <value>Производство нитропродуктов - реактивов (2,4-динитрофенилгидразин, динитробензол-мета, динитрофенол-бета и гамма, паранитробензолазоальфанафтол (магнезон 11), нитробензоилхлорид-пара, нитрофенол-мета, -пара и -орто, нитротолуол-мета, -пара и -орто, нитроанилин-орто, -мета и -пара, нитробензол-пара-азорезорцин (магнезон 1), нингидрин, нитрон, нитробензол, нитробензальдегид-пара, -мета и -орто, нитрозоальфанафтол-бета, нитрозобетанафтол-альфа)</value>
+  </data>
+  <data name="listBox_factors.Items6" xml:space="preserve">
+    <value>производство орто- и паратолуидинов, 2,6-дихлорпаранитроанилина, 2-хор-4-нитроанилина, 4-хлор-2-нитроанилина (азоамин красный 2С), хлоранилина, парахлоранилина, метахлоранилина, 2,5-дихлоранилина, ортохлоранилина</value>
+  </data>
+  <data name="listBox_factors.Items7" xml:space="preserve">
+    <value>Производство радиоактивных солей урана и тория (уранил азотнокислый, уксуснокислый, сернокислый, хлористый и углекислый, ураниламмоний азотнокислый, уран окись. Торий азотнокислый, уксуснокислый, хлористый, углекислый, щавелевокислый, сернокислый и др.)</value>
+  </data>
+  <data name="listBox_factors.Items8" xml:space="preserve">
+    <value>Производство реактивов, получаемых на основе соединений мышьяка (арсаниловая кислота, антрахас, бензол-2-арсоновая кислота, 1-азо-2-оксинафталин, 3,6-дисульфокислота, метилен бромистый, метилен йодистый, фениларсоновая кислота, парадиметиламиноазофениларсоновая кислота, ортонитрофениларсоновая кислота, паранитрофениларсоновая кислота, фенантролин ортосолянокислый, фенантролин ортосернокислый, ферроин, торон, уранон)</value>
+  </data>
+  <data name="listBox_factors.Items9" xml:space="preserve">
+    <value>Производство реактивов, получаемых на основе цианистых соединений (бензоиноксимальфа (купрон), бензил, рубеановодородная кислота, фенилуксусная кислота, бензоин, нитропруссид натрия, ацетонитрил, гетероауксин, 2-фурилальдегид, 2-фурилдиоксин, фурил, фуроин, миндальная кислота, нитропруссид калия)</value>
+  </data>
+  <data name="listBox_factors.Items10" xml:space="preserve">
+    <value>Производство солей свинца-реактивов (свинец хромовокислый, свинец хлористый, свинец двуокись, свинец металлический в палочках, свинец йодистый, свинец щавелевокислый, свинец гранулированный, свинец перекись, свинец азотнокислый, свинец окись, свинец роданистый, свинец сернокислый, свинец уксуснокислый, свинец серноватистокислый, фталат свинца, свинец углекислый)</value>
+  </data>
+  <data name="listBox_factors.Items11" xml:space="preserve">
+    <value>Производство фторсодержащих солей-реактивов (алюминий кремнефтористоводородный, алюминий фтористый, безводный, калий кремнефтористоводородный, титан-аммоний фтористый, калий титанофтористоводородный, магний фтористый, натрий кремнефтористоводородный, кремнефтористоводородная кислота, фтористый литий, фтористый натрий и фтористый калий)</value>
+  </data>
+  <data name="listBox_factors.Items12" xml:space="preserve">
+    <value>производство хромового ангидрида, хромпика калиевого и натриевого, хромовых реактивов, окиси хрома, хромового дубителя, алюмохромфосфатного связующего, хромоникелевых фосфатов, хромсодержащих кронов и пигментов, хроматирующих пассивирующих составов, хромсодержащих полирующих паст</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>52</value>
+  </metadata>
+</root>
