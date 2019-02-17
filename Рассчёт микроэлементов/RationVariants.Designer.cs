@@ -77,7 +77,7 @@
             this.dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -106,9 +106,9 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(661, 297);
+            this.tabPage2.Size = new System.Drawing.Size(766, 451);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Вариант 1";
+            this.tabPage2.Text = "Вариант 2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // dgv2
@@ -137,7 +137,7 @@
             this.dgv2.Location = new System.Drawing.Point(3, 3);
             this.dgv2.Name = "dgv2";
             this.dgv2.ReadOnly = true;
-            this.dgv2.Size = new System.Drawing.Size(655, 291);
+            this.dgv2.Size = new System.Drawing.Size(760, 445);
             this.dgv2.TabIndex = 1;
             // 
             // excelExport_button
@@ -153,6 +153,7 @@
             this.excelExport_button.Text = "Экспорт в Excel";
             this.excelExport_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.excelExport_button.UseVisualStyleBackColor = true;
+            this.excelExport_button.Click += new System.EventHandler(this.excelExport_button_Click);
             // 
             // RationVariants
             // 

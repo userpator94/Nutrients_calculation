@@ -231,6 +231,7 @@ namespace Рассчёт_микроэлементов
                 comboBox5.Enabled = false;
                 button_FH.Enabled = false;
                 mealName_listBox.Enabled = true;
+                recommendMenu.Enabled = false;
             }
             else   //ЛПП
             {
@@ -243,6 +244,7 @@ namespace Рассчёт_микроэлементов
                 mealName_listBox.SelectedIndex = 0;
                 //((ListBox)mealName_listBox.SelectedItem).Focus();
                 mealName_listBox.Enabled = false;
+                recommendMenu.Enabled = true;
             }
         }
 

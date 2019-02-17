@@ -521,6 +521,7 @@
             // 
             // recommendMenu
             // 
+            this.recommendMenu.Enabled = false;
             this.recommendMenu.Location = new System.Drawing.Point(743, 11);
             this.recommendMenu.Name = "recommendMenu";
             this.recommendMenu.Size = new System.Drawing.Size(107, 37);

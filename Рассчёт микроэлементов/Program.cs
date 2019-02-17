@@ -20,7 +20,7 @@ namespace Рассчёт_микроэлементов
             TimeSpan ts = today - finalDate;
             if (ts.Days >= 0)
             {
-                MessageBox.Show("Неизвестная ошибка", "Внимание",
+                MessageBox.Show("Ознакомительный период окончен", "Внимание",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error,
                         MessageBoxDefaultButton.Button1);
