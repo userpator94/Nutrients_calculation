@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,6 +62,7 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.button_FH = new System.Windows.Forms.Button();
+            this.recommendMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -493,7 +495,7 @@
             "Витамины"});
             this.comboBox5.Location = new System.Drawing.Point(656, 27);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(91, 21);
+            this.comboBox5.Size = new System.Drawing.Size(62, 21);
             this.comboBox5.TabIndex = 35;
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
@@ -517,11 +519,22 @@
             this.button_FH.UseVisualStyleBackColor = true;
             this.button_FH.Click += new System.EventHandler(this.button_FH_Click);
             // 
+            // recommendMenu
+            // 
+            this.recommendMenu.Location = new System.Drawing.Point(743, 11);
+            this.recommendMenu.Name = "recommendMenu";
+            this.recommendMenu.Size = new System.Drawing.Size(107, 37);
+            this.recommendMenu.TabIndex = 38;
+            this.recommendMenu.Text = "Рекомендуемое меню";
+            this.recommendMenu.UseVisualStyleBackColor = true;
+            this.recommendMenu.Click += new System.EventHandler(this.recommendMenu_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 461);
+            this.Controls.Add(this.recommendMenu);
             this.Controls.Add(this.button_FH);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.comboBox5);
@@ -555,9 +568,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Рассчёт микроэлементов";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.EnabledChanged += new System.EventHandler(this.Form1_EnabledChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -598,6 +613,7 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button_FH;
+        private System.Windows.Forms.Button recommendMenu;
     }
 }
 

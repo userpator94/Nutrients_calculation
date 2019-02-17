@@ -40,12 +40,14 @@ namespace Рассчёт_микроэлементов
         private void HarmfulFactor_FormClosed(object sender, FormClosedEventArgs e)
         {
             myConnection.Close();
+            this.Owner.Enabled = true;
         }
 
         private void CLose_Click(object sender, EventArgs e)
         {
             //Clipboard.SetText(textBox_ration.Text);
             ratio.rationHF = textBox_ration.Text;
+            this.Owner.Enabled = true;
             this.Close();
         }
 

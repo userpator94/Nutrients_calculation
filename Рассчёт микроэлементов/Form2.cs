@@ -60,7 +60,7 @@ namespace Рассчёт_микроэлементов
                 {
                     mass = Convert.ToInt16(subData[subData.Length - 1].Trim('г'));
                 }
-                catch (Exception exc) {
+                catch {
                     MessageBox.Show("Проверьте есть ли значение массы продукта в списке добавленных продуктов в предыдущем окне");
                     this.Close();
                 }
@@ -112,9 +112,9 @@ namespace Рассчёт_микроэлементов
             //if (fbd.ShowDialog() == DialogResult.OK) dir = fbd.SelectedPath;            
             //else return;
 
-            string fileName = "потребление микроэлементов " + dgv.Rows[0].Cells[0].Value.ToString().Replace('.', '_') + ".xls";
-            string fileDir = Path.Combine(dir, fileName);
-            if (File.Exists(fileDir)) fileDir = Path.GetDirectoryName(fileDir) + Path.GetFileNameWithoutExtension(fileDir) + "(1)" + ".xls";
+            //string fileName = "потребление микроэлементов " + dgv.Rows[0].Cells[0].Value.ToString().Replace('.', '_') + ".xls";
+            //string fileDir = Path.Combine(dir, fileName);
+            //if (File.Exists(fileDir)) fileDir = Path.GetDirectoryName(fileDir) + Path.GetFileNameWithoutExtension(fileDir) + "(1)" + ".xls";
             //File.Create(fileDir);
             Microsoft.Office.Interop.Excel.Application excApp = new Microsoft.Office.Interop.Excel.Application();
             try
@@ -228,6 +228,7 @@ namespace Рассчёт_микроэлементов
                             }
                             wsh.Cells[dgv.Rows.Count + 7 + i, 4] = d+" %";
                         }
+                        else wsh.Cells[dgv.Rows.Count + 7 + i, 3] = "нормы не установлены";
                     }
                     reader.Close();
                 }
@@ -261,6 +262,10 @@ namespace Рассчёт_микроэлементов
                                 redCell.Interior.Color = XlRgbColor.rgbRed;
                             }
                             wsh.Cells[dgv.Rows.Count + 7 + i, 4] = d + " %";
+                        }
+                        else
+                        {
+                            wsh.Cells[dgv.Rows.Count + 7 + i, 3] = "нормы не установлены";
                         }
                     }
                     reader.Close();

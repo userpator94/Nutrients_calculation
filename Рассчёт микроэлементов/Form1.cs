@@ -109,13 +109,17 @@ namespace Рассчёт_микроэлементов
             ratio.age = Convert.ToInt16(comboBox1.SelectedItem);
             ratio.sex = comboBox2.SelectedItem.ToString();
 
-            Form2 preshow_form = new Form2();
-            preshow_form.StartPosition = FormStartPosition.CenterParent;
-            preshow_form.Location = this.Location;
-            preshow_form.Show();
-            var x = Location.X + 51;
-            var y = Location.Y + 30;
-            preshow_form.Location = new System.Drawing.Point(x, y);          
+            try
+            {
+                Form2 preshow_form = new Form2();
+                preshow_form.StartPosition = FormStartPosition.CenterParent;
+                preshow_form.Location = this.Location;
+                preshow_form.Show();
+                var x = Location.X + 51;
+                var y = Location.Y + 30;
+                preshow_form.Location = new System.Drawing.Point(x, y);
+            }
+            catch { }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -245,6 +249,7 @@ namespace Рассчёт_микроэлементов
         private void button_FH_Click(object sender, EventArgs e)
         {
             Form fh = new HarmfulFactor();
+            fh.Owner = this;
             fh.StartPosition = FormStartPosition.CenterParent;
             fh.Location = this.Location;        
             fh.Show(this);
@@ -254,6 +259,7 @@ namespace Рассчёт_микроэлементов
                 var y = Location.Y;
                 fh.Location = new System.Drawing.Point(Math.Max(x, 0), y);
             }
+            this.Enabled = false;
             //    normativs.Location = new System.Drawing.Point(Math.Max(x, 0), Math.Max(y, 0));
             //}
         }
@@ -263,6 +269,34 @@ namespace Рассчёт_микроэлементов
             ratio.rationNum = comboBox5.SelectedIndex + 1;
         }
 
+        private void Form1_EnabledChanged(object sender, EventArgs e)
+        {
+            if (this.Enabled)
+            {
+                for (int i=0; i<comboBox5.Items.Count; i++)
+                {
+                    if (ratio.rationHF==comboBox5.Items[i].ToString()) comboBox5.SelectedIndex = i;
+                }
+                //int cb5I = comboBox5.FindStringExact(ratio.rationHF);
+                ////int cb5I = comboBox5.Items.IndexOf(ratio.rationHF);
+                //comboBox5.SelectedIndex = cb5I;                
+            }
+        }
+
+        private void recommendMenu_Click(object sender, EventArgs e)
+        {
+            RationVariants rv = new RationVariants(comboBox5.Items[comboBox5.SelectedIndex].ToString());
+            rv.StartPosition = FormStartPosition.CenterParent;
+            rv.Location = this.Location;
+            rv.Show();
+            if (rv.StartPosition == FormStartPosition.CenterParent)
+            {
+                var x = Location.X + (Width - rv.Width) / 2;
+                var y = Location.Y;
+                rv.Location = new System.Drawing.Point(Math.Max(x, 0), y);
+            }
+
+        }
     }
 
     static class ratio

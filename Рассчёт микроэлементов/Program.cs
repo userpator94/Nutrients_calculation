@@ -15,7 +15,7 @@ namespace Рассчёт_микроэлементов
         static void Main()
         {
             DateTime finalDate;
-            DateTime.TryParse("11.11.2018", out finalDate);
+            DateTime.TryParse("21.02.2019", out finalDate);
             DateTime today = DateTime.Today;
             TimeSpan ts = today - finalDate;
             if (ts.Days >= 0)
